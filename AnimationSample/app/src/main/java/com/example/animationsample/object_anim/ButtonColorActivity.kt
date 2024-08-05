@@ -1,11 +1,11 @@
-package com.example.animationsample
+package com.example.animationsample.object_anim
 
-import android.animation.Animator
 import android.animation.ArgbEvaluator
 import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
+import com.example.animationsample.R
+import com.example.animationsample.colorListData
 import com.example.animationsample.databinding.ActivityButtonColorBinding
 
 class ButtonColorActivity : AppCompatActivity() {

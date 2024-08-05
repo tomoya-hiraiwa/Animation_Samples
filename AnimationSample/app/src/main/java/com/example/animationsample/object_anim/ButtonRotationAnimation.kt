@@ -1,4 +1,4 @@
-package com.example.animationsample
+package com.example.animationsample.object_anim
 
 import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity

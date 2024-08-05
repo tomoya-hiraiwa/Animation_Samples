@@ -1,4 +1,4 @@
-package com.example.animationsample
+package com.example.animationsample.object_anim
 
 import android.animation.Animator
 import android.animation.ObjectAnimator
@@ -6,10 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.AnimationUtils
-import android.widget.SeekBar
 import com.example.animationsample.databinding.ActivityButtonShrinkBinding
-import com.google.android.material.slider.Slider
 
 class ButtonShrinkActivity : AppCompatActivity() {
     private lateinit var b: ActivityButtonShrinkBinding

@@ -7,4 +7,7 @@
     <color name="color2">#E1BEE7</color>
     <color name="color3">#FFF9C4</color>
     <color name="color4">#FFCCBC</color>
+    <color name="sample_am_frame">#80000000</color>
+    <color name="sample_am_login">#FFC507</color>
+    <color name="sample_am_register">#FF8707</color>
 </resources>

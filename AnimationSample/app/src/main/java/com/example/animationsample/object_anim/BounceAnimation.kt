@@ -1,12 +1,8 @@
-package com.example.animationsample
+package com.example.animationsample.object_anim
 
-import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.animation.AccelerateDecelerateInterpolator
-import android.view.animation.AnimationSet
-import android.view.animation.BounceInterpolator
 import android.view.animation.LinearInterpolator
 import androidx.dynamicanimation.animation.DynamicAnimation
 import androidx.dynamicanimation.animation.SpringAnimation

@@ -13,28 +13,34 @@
         android:theme="@style/Theme.AnimationSample"
         tools:targetApi="31">
         <activity
-            android:name=".DragListAnimation"
+            android:name=".tp_anim.SampleAMSplashActivity"
             android:exported="false" />
         <activity
-            android:name=".SimpleIconAnimation"
+            android:name=".tp_anim.SampleAMLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".BounceAnimation"
+            android:name=".list_anim.DragListAnimation"
             android:exported="false" />
         <activity
-            android:name=".ChangeShapeAnimation"
+            android:name=".icon_anim.SimpleIconAnimation"
             android:exported="false" />
         <activity
-            android:name=".ButtonRotationAnimation"
+            android:name=".object_anim.BounceAnimation"
             android:exported="false" />
         <activity
-            android:name=".ButtonColorActivity"
+            android:name=".object_anim.ChangeShapeAnimation"
+            android:exported="false" />
+        <activity
+            android:name=".object_anim.ButtonRotationAnimation"
+            android:exported="false" />
+        <activity
+            android:name=".object_anim.ButtonColorActivity"
             android:exported="false" />
         <activity
             android:name=".ButtonColorAnimation"
             android:exported="false" />
         <activity
-            android:name=".ButtonShrinkActivity"
+            android:name=".object_anim.ButtonShrinkActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,12 +1,11 @@
-package com.example.animationsample
+package com.example.animationsample.object_anim
 
 import android.animation.Animator
-import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.animationsample.R
 import com.example.animationsample.databinding.ActivityChangeShapeAnimationBinding
-import com.google.android.material.button.MaterialButton
 
 class ChangeShapeAnimation : AppCompatActivity() {
     private lateinit var b: ActivityChangeShapeAnimationBinding

@@ -1,4 +1,4 @@
-package com.example.animationsample
+package com.example.animationsample.icon_anim
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.animation.AnimationUtils
 import android.view.animation.CycleInterpolator
 import android.view.animation.ScaleAnimation
 import android.view.animation.TranslateAnimation
-import androidx.core.view.doOnLayout
 import androidx.core.view.isVisible
+import com.example.animationsample.R
 import com.example.animationsample.databinding.ActivitySimpleIconAnimationBinding
 
 class SimpleIconAnimation : AppCompatActivity() {
@@ -67,8 +67,8 @@ class SimpleIconAnimation : AppCompatActivity() {
 
     private fun thumbChange(){
         b.apply {
-            val small = AnimationUtils.loadAnimation(this@SimpleIconAnimation,R.anim.thumb_small)
-            val big = AnimationUtils.loadAnimation(this@SimpleIconAnimation,R.anim.thumb_big)
+            val small = AnimationUtils.loadAnimation(this@SimpleIconAnimation, R.anim.thumb_small)
+            val big = AnimationUtils.loadAnimation(this@SimpleIconAnimation, R.anim.thumb_big)
             if (!isGood){
                 thumbOff.startAnimation(small)
                 thumbOff.isVisible = false
@@ -90,7 +90,7 @@ class SimpleIconAnimation : AppCompatActivity() {
     }
     private fun likeAnim(){
         b.apply {
-            val animation = AnimationUtils.loadAnimation(this@SimpleIconAnimation,R.anim.like_back)
+            val animation = AnimationUtils.loadAnimation(this@SimpleIconAnimation, R.anim.like_back)
             likeShadow.startAnimation(animation)
         }
     }

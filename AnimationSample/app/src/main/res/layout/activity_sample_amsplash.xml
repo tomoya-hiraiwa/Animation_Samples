@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tp_anim.SampleAMSplashActivity">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:id="@+id/back_image"
+        android:layout_width="800dp"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/image_1" />
+    <FrameLayout
+        android:id="@+id/shader"
+        android:background="@color/sample_am_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:translationX="@dimen/logo_translation"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="100dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="20dp"
+        android:layout_gravity="end|bottom"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+        <TextView
+            android:textColor="@color/sample_am_register"
+            android:gravity="center"
+            android:text="Skip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
