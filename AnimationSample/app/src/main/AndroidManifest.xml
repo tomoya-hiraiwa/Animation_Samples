@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AnimationSample"
         tools:targetApi="31">
         <activity
+            android:name=".list_anim.SwipeListWithBackgroundAnimation"
+            android:exported="false" />
+        <activity
             android:name=".list_anim.SwipeListAnimation"
             android:exported="false" />
         <activity
