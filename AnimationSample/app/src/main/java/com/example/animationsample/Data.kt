@@ -1,9 +1,12 @@
 package com.example.animationsample
 
 import com.example.animationsample.icon_anim.SimpleIconAnimation
+import com.example.animationsample.list_anim.Carousel
 import com.example.animationsample.list_anim.DragListAnimation
+import com.example.animationsample.list_anim.LoopCarousel
 import com.example.animationsample.list_anim.SwipeListAnimation
 import com.example.animationsample.list_anim.SwipeListWithBackgroundAnimation
+import com.example.animationsample.list_anim.TopicAndList
 import com.example.animationsample.object_anim.BounceAnimation
 import com.example.animationsample.object_anim.ButtonColorActivity
 import com.example.animationsample.object_anim.ButtonRotationAnimation
@@ -27,6 +30,10 @@ val animationListData = mutableListOf<AnimationData>(
     AnimationData("Drag List Animation",0, DragListAnimation(),0),
     AnimationData("Swipe List Animation",0, SwipeListAnimation(),0),
     AnimationData("Swipe List Animation with Background",0, SwipeListWithBackgroundAnimation(),0),
+    AnimationData("Topic And Text List",0, TopicAndList(),0),
+    AnimationData("Carousel",0, Carousel(),0),
+    AnimationData("Loop Carousel",0, LoopCarousel(),0),
+    AnimationData("Activity Animation",-1,"",0),
     AnimationData("Past TestProject Animation",-1,"",0),
     AnimationData("Sample ModuleC Login",0, SampleAMLoginActivity(),0),
     AnimationData("Sample ModuleC Splash",0, SampleAMSplashActivity(),0),

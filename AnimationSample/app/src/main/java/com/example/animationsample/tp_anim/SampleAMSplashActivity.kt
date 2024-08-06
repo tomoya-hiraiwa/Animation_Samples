@@ -22,17 +22,20 @@ class SampleAMSplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         b = ActivitySampleAmsplashBinding.inflate(layoutInflater)
         setContentView(b.root)
+        //set fullScreen mode.
         window.insetsController?.apply {
             hide(WindowInsets.Type.systemBars())
             systemBarsBehavior = WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
         b.apply {
+            //logo rotation animation
             logo.rotation = -180f
             logo.animate().apply {
                 rotation(0f)
                 duration = 1500
                 interpolator = AccelerateDecelerateInterpolator()
             }
+            //dark background fade out alpha animation.
             shader.startAnimation(AlphaAnimation(1f,0f).apply {
                 duration = 1000
                 fillAfter = true
@@ -41,6 +44,7 @@ class SampleAMSplashActivity : AppCompatActivity() {
             imageScroll()
         }
     }
+    //logo move to center with scroll animation.
     private fun logoScroll(){
         b.apply {
             val startOffset = resources.getDimensionPixelOffset(R.dimen.logo_translation).toFloat()
@@ -50,6 +54,7 @@ class SampleAMSplashActivity : AppCompatActivity() {
             }.start()
         }
     }
+    //background image scroll animation.
     private fun imageScroll(){
         b.apply {
             ObjectAnimator.ofFloat(backImage,"translationX",-800f).apply {

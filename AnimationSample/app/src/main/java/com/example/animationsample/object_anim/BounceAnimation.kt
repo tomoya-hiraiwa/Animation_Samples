@@ -27,6 +27,7 @@ class BounceAnimation : AppCompatActivity() {
             }
         }
     }
+    //bounce animation
     private fun simpleBounce() {
         b.apply {
             ObjectAnimator.ofFloat(button,"translationY",0f,-20f,0f).apply {
@@ -35,14 +36,17 @@ class BounceAnimation : AppCompatActivity() {
             }.start()
             }
     }
+    //error bounce animation
     private fun errorBounce(){
         b.apply {
+            //set multiple value to be natural bounce.
             ObjectAnimator.ofFloat(errorButton,"translationX",0f,20f,-20f,10f,-10f,0f).apply {
                 duration = 500
                 interpolator = LinearInterpolator()
             }.start()
         }
     }
+    //Spring bounce using SpringAnimation class
     private fun springBounce(){
         b.apply {
             SpringAnimation(splingItem,DynamicAnimation.TRANSLATION_Y,300f).apply {

@@ -8,12 +8,15 @@ import com.example.animationsample.databinding.ActivityButtonRotationAnimationBi
 class ButtonRotationAnimation : AppCompatActivity() {
     private lateinit var b: ActivityButtonRotationAnimationBinding
     private var animationDuration = 100L
+
+    //total rotation angle value
     private var arrowRotationValue = 0f
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         b = ActivityButtonRotationAnimationBinding.inflate(layoutInflater)
         setContentView(b.root)
         b.apply {
+            //set total animation time.
             seekbar.addOnChangeListener { slider, value, fromUser ->
                 animationDuration = value.toLong()
             }
@@ -25,20 +28,24 @@ class ButtonRotationAnimation : AppCompatActivity() {
             }
         }
     }
-    private fun rotation(){
-        b.apply {
-        ObjectAnimator.ofFloat(button,"rotation",0f,360f).apply {
-            duration = animationDuration
 
-        }.start()
-            }
+    //button rotation
+    private fun rotation() {
+        b.apply {
+            ObjectAnimator.ofFloat(button, "rotation", 0f, 360f).apply {
+                duration = animationDuration
+
+            }.start()
+        }
     }
-    private fun rotationArrow(){
+    //arrow drawable rotation using animate() method
+    private fun rotationArrow() {
         b.apply {
             arrow.animate().apply {
+                //change rotation angle value.
                 arrowRotationValue = if (arrowRotationValue == 180f) 0f else 180f
-             rotation(arrowRotationValue)
-                 duration = animationDuration
+                rotation(arrowRotationValue)
+                duration = animationDuration
                 start()
             }
         }

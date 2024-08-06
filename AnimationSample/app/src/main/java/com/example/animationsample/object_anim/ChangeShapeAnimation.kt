@@ -16,6 +16,7 @@ class ChangeShapeAnimation : AppCompatActivity() {
         b = ActivityChangeShapeAnimationBinding.inflate(layoutInflater)
         setContentView(b.root)
         b.apply {
+            //set total animation time.
             seekbar.addOnChangeListener { slider, value, fromUser ->
                 animationDuration = value.toLong()
             }
@@ -27,10 +28,13 @@ class ChangeShapeAnimation : AppCompatActivity() {
             }
         }
     }
+    //change material button corner radius
     private fun changeCorner(){
+        //get random corner radius value
         val cornerRange = 1..100
         val cornerValue = cornerRange.random()
         b.apply {
+            //change corner animation using value animator
             ValueAnimator.ofInt(button.cornerRadius,cornerValue).apply {
                 addUpdateListener {
                     button.cornerRadius = animatedValue as Int
@@ -39,6 +43,7 @@ class ChangeShapeAnimation : AppCompatActivity() {
             }.start()
         }
     }
+    //change button size animation.
     private fun changeSize() {
         b.apply {
             val smallSize = resources.getDimensionPixelSize(R.dimen.button_size)

@@ -23,16 +23,19 @@ class ButtonColorActivity : AppCompatActivity() {
             withShrinkButton.setOnClickListener {
                 withShrink()
             }
+            //set total animation time.
             seekbar.addOnChangeListener { slider, value, fromUser ->
                 animationDuration = value.toLong()
             }
         }
     }
-
+    //change color function using objectAnimator
     private fun changeColor() {
         b.apply {
+            //set start and end color
             var fromColor = getColor(latestColor)
             var toColor = 0
+            //get end color until it is different from the start color.
             do {
                 val color = colorListData.random()
                 latestColor = color
@@ -42,7 +45,7 @@ class ButtonColorActivity : AppCompatActivity() {
                 ObjectAnimator.ofObject(
                     button,
                     "backgroundColor",
-                    ArgbEvaluator(),
+                    ArgbEvaluator(),  //this evaluator is used to animate the color change.
                     fromColor,
                     toColor
                 ).apply {
@@ -52,7 +55,7 @@ class ButtonColorActivity : AppCompatActivity() {
             }
         }
     }
-
+    //color change animation with shrink
     private fun withShrink() {
         var fromColor = getColor(latestColor)
         var toColor = 0

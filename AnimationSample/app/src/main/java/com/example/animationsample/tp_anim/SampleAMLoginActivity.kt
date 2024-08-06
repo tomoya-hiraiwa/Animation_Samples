@@ -21,16 +21,19 @@ class SampleAMLoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         b = ActivitySampleAmloginBinding.inflate(layoutInflater)
         setContentView(b.root)
+        //set fullScreen mode.
         window.insetsController?.apply {
             hide(WindowInsets.Type.systemBars())
             systemBarsBehavior = WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
         }
         b.apply {
+            //logo up animation.
             logo.startAnimation(TranslateAnimation(1f,1f,1f,-20f).apply {
                 duration = 200
                 interpolator = LinearInterpolator()
                 fillAfter = true
             })
+            //login frame show alpha animation
             loginFrame.startAnimation(AlphaAnimation(0f,1f).apply {
                 duration = 300
                 startOffset =500
@@ -38,6 +41,7 @@ class SampleAMLoginActivity : AppCompatActivity() {
             buttonLocationAnim()
         }
     }
+    //move each button animation
     private fun buttonLocationAnim(){
         b.apply {
             ObjectAnimator.ofFloat(loginButton,"translationY",-100f).apply {

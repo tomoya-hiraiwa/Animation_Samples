@@ -37,6 +37,7 @@ class SwipeListAnimation : AppCompatActivity() {
             helper.attachToRecyclerView(list)
         }
     }
+    //set swipe function using ItemTouchHelper
     inner class ListHelper: ItemTouchHelper.SimpleCallback(0,ItemTouchHelper.RIGHT){
         override fun onMove(
             recyclerView: RecyclerView,

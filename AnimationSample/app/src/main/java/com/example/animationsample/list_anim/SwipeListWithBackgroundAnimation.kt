@@ -53,7 +53,7 @@ class SwipeListWithBackgroundAnimation : AppCompatActivity() {
         ): Boolean {
             return false
         }
-
+        //set background view in onChildDraw function
         @RequiresApi(Build.VERSION_CODES.R)
         override fun onChildDraw(
             c: Canvas,
@@ -65,16 +65,22 @@ class SwipeListWithBackgroundAnimation : AppCompatActivity() {
             isCurrentlyActive: Boolean
         ) {
             super.onChildDraw(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive)
+            //get target itemView from recyclerView.ViewHolder
             val itemView = viewHolder.itemView
+            //set background color
             val backGround = ColorDrawable(Color.RED)
+            //set icon
             val icon = getDrawable(R.drawable.baseline_delete_24)!!
+            //set icon padding
             val iconPadding = (itemView.height - icon.intrinsicHeight) / 2
+            //set icon draw place
             icon.setBounds(
                 itemView.left + iconPadding,
                 itemView.top + iconPadding,
                 (itemView.left + iconPadding) + icon.intrinsicWidth,
                 itemView.bottom - iconPadding
             )
+            //set background draw place
             backGround.setBounds(
                 itemView.left,
                 itemView.top,

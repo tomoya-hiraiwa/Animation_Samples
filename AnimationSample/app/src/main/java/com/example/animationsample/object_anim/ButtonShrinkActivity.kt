@@ -23,11 +23,13 @@ class ButtonShrinkActivity : AppCompatActivity() {
             objButton.setOnClickListener {
                 objectShrink()
             }
+            //set total animation time.
             seekbar.addOnChangeListener { slider, value, fromUser ->
                 animationDuration = value.toLong()
             }
         }
     }
+    //Shrink function using animate() method
     private fun buttonShrink(){
         b.button.animate().apply {
             scaleX(0.9f)
@@ -44,9 +46,10 @@ class ButtonShrinkActivity : AppCompatActivity() {
         }
     }
 
-
+    //Shrink function using ObjectAnimator
     private fun objectShrink(){
         b.apply {
+            //create objectAnimator that scales down the X and Y value.
             val scaleDownX = ObjectAnimator.ofFloat(objButton, View.SCALE_X,0.9f).apply {
                 duration = animationDuration/2
                 interpolator = AccelerateDecelerateInterpolator()
@@ -55,6 +58,7 @@ class ButtonShrinkActivity : AppCompatActivity() {
                 duration = animationDuration/2
                 interpolator = AccelerateDecelerateInterpolator()
             }
+            //create objectAnimator that scales up the X and Y value.
             val scaleUpX = ObjectAnimator.ofFloat(objButton, View.SCALE_X,1.0f).apply {
                 duration = animationDuration/2
                 interpolator = AccelerateDecelerateInterpolator()
@@ -63,14 +67,17 @@ class ButtonShrinkActivity : AppCompatActivity() {
                 duration = animationDuration/2
                 interpolator = AccelerateDecelerateInterpolator()
             }
+            //only start scaleDown animation.
             scaleDownX.start()
             scaleDownY.start()
+            //set listener in the scaleDown animator.
             scaleDownX.addListener(object: Animator.AnimatorListener{
                 override fun onAnimationStart(animation: Animator) {
 
                 }
 
                 override fun onAnimationEnd(animation: Animator) {
+                    //start scaleUp animation when scaleDown animation finishes.
                     scaleUpX.start()
                     scaleUpY.start()
                 }
