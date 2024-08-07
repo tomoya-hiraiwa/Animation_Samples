@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AnimationSample"
         tools:targetApi="31">
         <activity
+            android:name=".object_anim.InterpolatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity_animation.DialogPopAnimation"
             android:exported="false" />
         <activity

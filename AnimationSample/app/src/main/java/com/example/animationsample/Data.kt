@@ -13,6 +13,7 @@ import com.example.animationsample.object_anim.ButtonColorActivity
 import com.example.animationsample.object_anim.ButtonRotationAnimation
 import com.example.animationsample.object_anim.ButtonShrinkActivity
 import com.example.animationsample.object_anim.ChangeShapeAnimation
+import com.example.animationsample.object_anim.InterpolatorActivity
 import com.example.animationsample.object_anim.NumberCountAnimation
 import com.example.animationsample.tp_anim.SampleAMLoginActivity
 import com.example.animationsample.tp_anim.SampleAMSplashActivity
@@ -31,6 +32,7 @@ val animationListData = mutableListOf<AnimationData>(
     AnimationData("Rotation Animation", 0, ButtonRotationAnimation(), 0),
     AnimationData("Shape Animation", 0, ChangeShapeAnimation(), 0),
     AnimationData("Bounce Animation", 0, BounceAnimation(), 0),
+    AnimationData("Interpolator",0,InterpolatorActivity(),0),
     AnimationData("Number Count Animation", 0, NumberCountAnimation(), 0),
     AnimationData("Icon Animation", -1, "", 0),
     AnimationData("Simple Icon Animation", 0, SimpleIconAnimation(), 0),
