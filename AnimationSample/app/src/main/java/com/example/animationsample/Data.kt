@@ -15,6 +15,8 @@ import com.example.animationsample.object_anim.ButtonShrinkActivity
 import com.example.animationsample.object_anim.ChangeShapeAnimation
 import com.example.animationsample.object_anim.InterpolatorActivity
 import com.example.animationsample.object_anim.NumberCountAnimation
+import com.example.animationsample.tp_anim.ExpressBookingIndicatorActivity
+import com.example.animationsample.tp_anim.ExpressLoadActivity
 import com.example.animationsample.tp_anim.SampleAMLoginActivity
 import com.example.animationsample.tp_anim.SampleAMSplashActivity
 
@@ -48,6 +50,8 @@ val animationListData = mutableListOf<AnimationData>(
     AnimationData("Past TestProject Animation", -1, "", 0),
     AnimationData("Sample ModuleC Login", 0, SampleAMLoginActivity(), 0),
     AnimationData("Sample ModuleC Splash", 0, SampleAMSplashActivity(), 0),
+    AnimationData("Express Booking Indicator", 0, ExpressBookingIndicatorActivity(), 0),
+    AnimationData("Express Load", 0, ExpressLoadActivity(), 0),
 
     )
 

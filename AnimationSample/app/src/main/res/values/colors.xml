@@ -10,4 +10,6 @@
     <color name="sample_am_frame">#80000000</color>
     <color name="sample_am_login">#FFC507</color>
     <color name="sample_am_register">#FF8707</color>
+    <color name="express_gray">#C4C4C4</color>
+    <color name="express_blue">#006CFF</color>
 </resources>
