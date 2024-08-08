@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AnimationSample"
         tools:targetApi="31">
         <activity
+            android:name=".object_anim.PageIndicatorAnimationActivity"
+            android:exported="false" />
+        <activity
             android:name=".tp_anim.ExpressLoadActivity"
             android:exported="false" />
         <activity

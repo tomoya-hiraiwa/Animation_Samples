@@ -15,6 +15,7 @@ import com.example.animationsample.object_anim.ButtonShrinkActivity
 import com.example.animationsample.object_anim.ChangeShapeAnimation
 import com.example.animationsample.object_anim.InterpolatorActivity
 import com.example.animationsample.object_anim.NumberCountAnimation
+import com.example.animationsample.object_anim.PageIndicatorAnimationActivity
 import com.example.animationsample.tp_anim.ExpressBookingIndicatorActivity
 import com.example.animationsample.tp_anim.ExpressLoadActivity
 import com.example.animationsample.tp_anim.SampleAMLoginActivity
@@ -36,6 +37,7 @@ val animationListData = mutableListOf<AnimationData>(
     AnimationData("Bounce Animation", 0, BounceAnimation(), 0),
     AnimationData("Interpolator",0,InterpolatorActivity(),0),
     AnimationData("Number Count Animation", 0, NumberCountAnimation(), 0),
+    AnimationData("Page Indicator Animation", 0, PageIndicatorAnimationActivity(), 0),
     AnimationData("Icon Animation", -1, "", 0),
     AnimationData("Simple Icon Animation", 0, SimpleIconAnimation(), 0),
     AnimationData("List Animation", -1, "", 0),

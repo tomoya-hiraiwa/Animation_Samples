@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".object_anim.PageIndicatorAnimationActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Indicator Animation"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <TextView
+        android:textSize="20sp"
+        android:text="Linear Animation"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tab_linear"
+        android:layout_gravity="center"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="25dp"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabRippleColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        app:tabIconTint="@color/express_gray"
+        app:tabIndicatorColor="@color/color2"
+        app:tabIndicator="@drawable/page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+    <TextView
+        android:textSize="20sp"
+        android:text="Elastic Animation"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/tab_elastic"
+        android:layout_gravity="center"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="25dp"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabRippleColor="@android:color/transparent"
+        android:background="@android:color/transparent"
+        app:tabIconTint="@color/express_gray"
+        app:tabIndicatorColor="@color/color2"
+        app:tabIndicator="@drawable/page_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.tabs.TabItem
+            android:icon="@drawable/baseline_circle_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>
