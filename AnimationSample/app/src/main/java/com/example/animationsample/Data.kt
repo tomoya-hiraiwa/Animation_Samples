@@ -2,6 +2,7 @@ package com.example.animationsample
 
 import com.example.animationsample.activity_animation.DialogPopAnimation
 import com.example.animationsample.dynamic_anim.ProgressCircleIndicator
+import com.example.animationsample.dynamic_anim.ProgressCircleUsingMaterial
 import com.example.animationsample.icon_anim.SimpleIconAnimation
 import com.example.animationsample.list_anim.Carousel
 import com.example.animationsample.list_anim.DragListAnimation
@@ -53,6 +54,7 @@ val animationListData = mutableListOf<AnimationData>(
     AnimationData("Dialog Pop", 0, DialogPopAnimation(), 0),
     AnimationData("Dynamic Animation", -1, "", 0),
     AnimationData("Circle Progress indicator",0,ProgressCircleIndicator(),0),
+    AnimationData("Circle Progress (Using Material Component)",0,ProgressCircleUsingMaterial(),0),
     AnimationData("Past TestProject Animation", -1, "", 0),
     AnimationData("Sample ModuleC Login", 0, SampleAMLoginActivity(), 0),
     AnimationData("Sample ModuleC Splash", 0, SampleAMSplashActivity(), 0),
