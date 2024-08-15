@@ -1,6 +1,7 @@
 package com.example.animationsample
 
 import com.example.animationsample.activity_animation.DialogPopAnimation
+import com.example.animationsample.dynamic_anim.ProgressCircleIndicator
 import com.example.animationsample.icon_anim.SimpleIconAnimation
 import com.example.animationsample.list_anim.Carousel
 import com.example.animationsample.list_anim.DragListAnimation
@@ -20,6 +21,7 @@ import com.example.animationsample.tp_anim.ExpressBookingIndicatorActivity
 import com.example.animationsample.tp_anim.ExpressLoadActivity
 import com.example.animationsample.tp_anim.SampleAMLoginActivity
 import com.example.animationsample.tp_anim.SampleAMSplashActivity
+import com.google.android.material.progressindicator.CircularProgressIndicator
 
 data class AnimationData(
     var title: String = "",
@@ -49,6 +51,8 @@ val animationListData = mutableListOf<AnimationData>(
     AnimationData("Loop Carousel", 0, LoopCarousel(), 0),
     AnimationData("Activity Animation", -1, "", 0),
     AnimationData("Dialog Pop", 0, DialogPopAnimation(), 0),
+    AnimationData("Dynamic Animation", -1, "", 0),
+    AnimationData("Circle Progress indicator",0,ProgressCircleIndicator(),0),
     AnimationData("Past TestProject Animation", -1, "", 0),
     AnimationData("Sample ModuleC Login", 0, SampleAMLoginActivity(), 0),
     AnimationData("Sample ModuleC Splash", 0, SampleAMSplashActivity(), 0),

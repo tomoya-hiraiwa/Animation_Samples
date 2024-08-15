@@ -12,4 +12,6 @@
     <color name="sample_am_register">#FF8707</color>
     <color name="express_gray">#C4C4C4</color>
     <color name="express_blue">#006CFF</color>
+    <color name="view_back">#CCCCCC</color>
+    <color name="view_progress">#03A9F4</color>
 </resources>

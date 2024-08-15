@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dynamic_anim.ProgressCircleIndicator">
+
+    <com.example.animationsample.dynamic_anim.ProgressCircleView
+        android:id="@+id/progress_circle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        app:layout_constraintBottom_toBottomOf="@+id/progress_circle"
+        app:layout_constraintTop_toTopOf="@+id/progress_circle"
+        app:layout_constraintEnd_toEndOf="@+id/progress_circle"
+        app:layout_constraintStart_toStartOf="@+id/progress_circle"
+        android:layout_width="0dp"
+        android:padding="4dp"
+        android:layout_height="40dp">
+        <NumberPicker
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:selectionDividerHeight="0dp"
+            android:backgroundTint="@android:color/transparent"
+            android:showDividers="none"
+            android:id="@+id/counter_number"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"/>
+        <TextView
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"
+            android:text="%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

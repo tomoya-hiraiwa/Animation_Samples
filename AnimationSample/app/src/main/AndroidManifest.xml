@@ -13,6 +13,9 @@
         android:theme="@style/Theme.AnimationSample"
         tools:targetApi="31">
         <activity
+            android:name=".dynamic_anim.ProgressCircleIndicator"
+            android:exported="false" />
+        <activity
             android:name=".object_anim.PageIndicatorAnimationActivity"
             android:exported="false" />
         <activity
